@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.talk-sect {
+    background-color: #E6F1FF;
+    background-image: url(../assets/lettalkbg.png);
+    background-repeat: no-repeat;
+    background-size: 48% 100%;
+    position: relative;
+    padding: 100px 0 0;
+}
+
+.talk-cont {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.talk-row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.talk-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.talk-content {
+    padding: 15px 30px 90px !important;
+    background: url(../assets/patternlets.svg) no-repeat 0 0;
+    background-size: 59%;
+    background-position: 260px -20px;
+}
+
+.talk-sect h2 {
+    color: #0fcc7c;
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.talk-content h3 {
+    font-size: 1.45rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.talk-sect p {
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.work-number-area {
+    text-align: center;
+    bottom: 0;
+}
+.talk-sect .work-numbers {
+    background: #FD695A;
+    margin: -3px;
+    display: inline-block;
+    text-align: center;
+    padding: 40px 30px 10px;
+    width: 18%;
+    color: #fff;
+    vertical-align: bottom;
+    min-height: 174px;
+}
+
+.work-number-area .work-numbers:nth-child(2) {
+    background: #0fcc7c;
+    color: #fff;
+}
+.work-number-area .work-numbers:nth-child(2) h2 {
+    color: #fff;
+}
+.work-number-area .work-numbers:nth-child(4) {
+    background: #0fcc7c;
+}
+.talk-sect .work-numbers h2 {
+    margin-bottom: 0;
+    color: #fff;
+    font-family: Georgia;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.talk-sect .work-numbers h2 span {
+    font-family: Georgia;
+    /* display: block !important; */
+}
+.talk-sect .work-numbers h2 .counter {
+    font-family: Georgia;
+}
+
+
+
+
+
+/* media queries=================================================================== */
+@media (max-width: 640px) and (min-width: 320px) {
+    .talk-sect:after {
+        content: '';
+        background: rgba(255, 255, 255, .9);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+    .talk-sect {
+        background-size: cover;
+        position: relative;
+    }
+
+    .talk-sect .talk-cont {
+        z-index: 99;
+        position: relative;
+    }
+
+        .talk-sect .work-numbers {
+            width: 48%;
+        }
+
+        .talk-sect .talk-content {
+            padding: 0px 30px 30px !important;
+        }
+}
+
+
+
+@media (min-width: 576px) {
+    .talk-cont {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .talk-content h3 {
+        font-size: 1rem !important;
+    }
+        .talk-sect h2 {
+        font-size: 2.5rem;
+        }
+}
+
+
+@media (min-width: 768px) {
+    .talk-cont {
+        max-width: 720px;
+    }
+
+    .talk-col {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .talk-cont {
+        max-width: 960px;
+    }
+}
+
+
+
+@media (min-width: 1200px) {
+    .talk-cont {
+        max-width: 1140px;
+    }
+
+    .talk-sect h2 {
+        font-size: 2rem;
+    }
+
+    .talk-content h3 {
+        font-size: 1.75rem;
+    }
+
+    .talk-rank {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}

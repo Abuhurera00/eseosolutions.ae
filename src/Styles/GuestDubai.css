@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins regular", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.gdubai-sect a {
+    text-decoration: none;
+}
+
+.gdubai-sect {
+    background: #F1F8FF url(../assets/guestgpservicesbg.svg) no-repeat left -100px bottom -0px / auto 80%;
+    position: relative;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.gdubai-cont {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.gdubai-row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.gdubai-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.gduabi-col {
+    margin-left: auto !important;
+}
+
+.gdubai-sect h2 {
+    color: #FD695A;
+    font-size: 2.5rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.gdubai-sect h3 {
+    font-size: 1.45rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.gdubai-table-cont {
+    margin-top: 1.5rem !important;
+}
+
+.gdubai-table {
+    font-size: .9em;
+    text-align: center !important;
+    border: 1px solid #dee2e6 !important;
+    --bs-table-bg: #f8f9fa;
+    --bs-table-striped-bg: #ecedee;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #dfe0e1;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #e5e6e7;
+    --bs-table-hover-color: #000;
+    color: #000;
+    --bs-table-accent-bg: transparent;
+    width: 100%;
+    margin-bottom: 1rem;
+    vertical-align: top;
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+.gdubai-table>thead {
+    vertical-align: bottom;
+}
+
+.gdubai-thead {
+    font-weight: 400;
+    color: #0fcc7c;
+}
+
+.gdubai-table tbody,
+.gdubai-table td,
+.gdubai-table tfoot,
+.gdubai-table th,
+.gdubai-table thead,
+.gdubai-table tr {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
+
+.gdubai-table th {
+    background: #fff !important;
+    white-space: nowrap;
+}
+
+.gdubai-table> :not(caption)>*>* {
+    background-color: #F1F8FF;
+    box-shadow: none !important;
+    padding: 1.4rem 0;
+    border-bottom-width: 1px;
+    text-align: -webkit-match-parent;
+}
+
+.gdubai-table>:not(:first-child) {
+    border-top: 2px solid currentColor;
+}
+
+.gdubai-table>tbody {
+    vertical-align: inherit;
+}
+
+.gdubai-table>tbody>tr:nth-of-type(2n+1) td {
+    background-color: rgba(233, 233, 233, 0.18) !important;
+}
+
+.gdubai-table>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: #ecedee;
+    color: #000;
+}
+
+.gdubai-p {
+    font-weight: 400;
+    color: #0fcc7c;
+    font-size: 1rem;
+    margin-top: 3rem !important;
+    line-height: 23px;
+    margin-bottom: 1rem;
+    font-family: "Poppins regular", sans-serif;
+}
+
+.gdubai-mt {
+    justify-content: flex-start !important;
+}
+
+.gdubai-btn-ml {
+    margin-left: 0 !important;
+}
+
+.btn-center {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries=============================================== */
+
+@media (min-width: 576px) {
+    .gdubai-cont {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .gdubai-cont {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .gdubai-cont {
+        max-width: 960px;
+    }
+}
+
+
+@media (max-width: 1199.98px) {
+    .gdubai-table-cont {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+
+
+@media (max-width: 1199.99px) {
+    .gdubai-table> :not(caption)>*>* {
+        padding: 1rem 0.5rem;
+    }
+
+    .gdubai-table>tbody>tr:nth-of-type(2n+1) td {
+        background-color: #F1F8FF !important;
+    }
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+    .gdubai-cont {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+        max-width: 1140px;
+    }
+
+    .gduabi-col {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .gdubai-sect h2 {
+        font-size: 2rem;
+    }
+
+    .gdubai-sect h3 {
+        font-size: 1.75rem;
+    }
+
+    .gdubai-mt {
+        margin-top: 1.5rem !important;
+    }
+}

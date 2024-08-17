@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="103" height="103" viewBox="0 0 103 103">
+  <g id="office-dubai" transform="translate(-1311 -4591)">
+    <circle id="Ellipse_339" data-name="Ellipse 339" cx="51.5" cy="51.5" r="51.5" transform="translate(1311 4591)" fill="#fff"/>
+    <g id="Group_7552" data-name="Group 7552" transform="translate(10974.153 22289)">
+      <path id="Path_12469" data-name="Path 12469" d="M164.845,64V24h-2a1,1,0,1,1,0-2h2V1a1,1,0,0,1,2,0V9.259c4.269,1.456,9.614,6.2,13.985,12.744h3.015a1,1,0,0,1,0,2H182.1a63.5,63.5,0,0,1,8.744,33c0,2.365-.1,4.7-.285,7h9.285a1,1,0,0,1,0,2h-44a1,1,0,0,1,0-2Zm24-7a61.25,61.25,0,0,0-8.919-32.719L179.749,24h-12.9V64h21.71c.193-2.3.291-4.634.291-7ZM178.4,22c-3.76-5.3-8.1-9.166-11.558-10.607V22Zm3.442,17a1,1,0,1,1,0,2h-10a1,1,0,1,1,0-2Zm-3-8a1,1,0,0,1,0,2h-7a1,1,0,1,1,0-2Zm5,16a1,1,0,1,1,0,2h-12a1,1,0,0,1,0-2Zm0,8a1,1,0,1,1,0,2h-12a1,1,0,0,1,0-2Z" transform="translate(-9787.844 -17684.002)" fill="#005fff"/>
+      <rect id="Rectangle_4103" data-name="Rectangle 4103" width="13" height="5" rx="2.5" transform="translate(-9617.153 -17646)" fill="#ffd565"/>
+    </g>
+  </g>
+</svg>

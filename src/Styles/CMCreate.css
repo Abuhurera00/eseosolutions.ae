@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.cmcreate-sect{
+    background: url(../assets/secircle.svg) no-repeat right -30% top / auto 60%;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.cmcreate-cont{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.cmcreate-row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.cmcreate-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.cmcreate-top-col{
+    text-align: center !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.cmcreate-sect h2 {
+    font-size: 2.5rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.cmcreate-sect p {
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Poppins regular", sans-serif;
+    font-size: 0.95rem;
+}
+
+.cmcreate-mt{
+    margin-top: 3rem !important;
+}
+
+.cmcreate-px{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.cmcreate-img {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.cmcreate-flex{
+    --bs-bg-opacity: 1;
+    background-color: rgba( 255, 255, 255, var(--bs-bg-opacity)) !important;
+    padding-bottom: 1rem !important;
+    padding-top: 1.5rem !important;
+    align-items: center !important;
+    position: relative !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    display: flex !important;
+}
+
+.cmcreate-theme-color {
+    color: #0fcc7c;
+}
+
+.cmcreate-sect h4 {
+    font-size: 1rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2
+}
+.cmcreate-sect p {
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Poppins regular", sans-serif;
+    font-size: 0.95rem;
+}
+
+
+.cmcreate-flex:hover {
+    background: #0fcc7c !important;
+}
+
+.cmcreate-flex:hover * {
+    color: white;
+}
+
+
+.cmcreate-pt-4{
+    padding-top: 3rem !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries======================================================================= */
+@media (min-width: 768px) {
+    .cmcreate-mid-col {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .cmcreate-card {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .cmcreate-order-2 {
+        order: 2 !important;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .cmcreate-flex {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .cmcreate-cont {
+        max-width: 1140px;
+    }
+
+    .cmcreate-top-col {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .cmcreate-sect h2 {
+        font-size: 2rem;
+    }
+
+    .cmcreate-sect h4 {
+        font-size: 1.5rem;
+    }
+}

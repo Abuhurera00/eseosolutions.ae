@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Titillium Web", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.proven-sect {
+    background: url(../assets/secircle.svg) no-repeat right -30% top / auto 100%;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.proven-cont {
+    text-align: center !important;
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.proven-sect h2 {
+    font-size: 2.5rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.proven-sect p {
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Poppins regular", sans-serif;
+    font-size: 0.95rem;
+}
+
+.proven-row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.proven-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.proven-col {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.proven-mpt {
+    margin-top: 1.5rem !important;
+}
+
+.proven-top-box {
+    margin-bottom: 1.5rem !important;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.proven-box-btn-cont {
+    width: 100% !important;
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.proven-box-btn-cont>.proven-box-btn-cont:not(:last-child)>.proven-box-btn,
+.proven-box-btn-cont>.proven-box-btn:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.proven-mpt .proven-box-btn {
+    font-size: 1.5rem;
+}
+
+.proven-rounded-start.proven-box-btn {
+    border-top-right-radius: 0rem !important;
+    border-bottom-right-radius: 0rem !important;
+}
+
+.proven-box-btn-cont>.proven-box-btn {
+    position: relative;
+    flex: 1 1 auto;
+}
+
+.proven-box-btn {
+    color: #0fcc7c;
+    border-color: #0fcc7c;
+    border-radius: .875rem !important;
+    transition: all 1s cubic-bezier(0.550, 0.085, 0.000, 0.990);
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 1px solid #0fcc7c;
+}
+
+.proven-box-btn-cont>.proven-box-btn-cont:not(:first-child)>.proven-box-btn,
+.proven-box-btn-cont>.proven-box-btn:nth-child(n+3),
+.proven-box-btn-cont>:not(.btn-check)+.proven-box-btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.proven-box-btn-cont>.proven-box-btn-cont:not(:first-child), .proven-box-btn-cont>.proven-box-btn:not(:first-child) {
+    margin-left: -1px;
+}
+
+.proven-box-btn-cont>.proven-box-btn.proven-active{
+    z-index: 1;
+}
+
+.proven-box-btn.proven-active {
+    background-color: #0fcc7c;
+    border-color: #0fcc7c;
+}
+
+.proven-rounded-end.proven-box-btn {
+    border-top-left-radius: 0rem !important;
+    border-bottom-left-radius: 0rem !important;
+}
+
+
+.proven-box-btn.proven-active {
+    color: #fff;
+}
+
+.proven-box{
+    margin-bottom: 1.5rem !important;
+}
+
+.proven-box-h4 {
+    font-family: 'Poppins', sans-serif;
+    text-align: left !important;
+}
+
+.proven-sect h4 {
+    font-size: 1rem !important;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2
+}
+
+.proven-box-btn:hover {
+    border-color: transparent;
+    color: white;
+    background-color: #FD695A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries============================================ */
+
+@media (min-width: 768px) {
+    .proven-box {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .proven-cont {
+        max-width: 1140px;
+    }
+
+    .proven-sect h2 {
+        font-size: 2rem;
+    }
+
+    .proven-col {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .proven-mpt {
+        margin-top: 3rem !important;
+    }
+    .proven-sect h4 {
+        font-size: 1.5rem;
+    }
+}

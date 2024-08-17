@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins regular", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.glearn-sect h2{
+    font-size: 2.5rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.glearn-sect{
+    background: #F1F8FF;
+    padding: 0px 0 0;
+    position: relative;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.glearn-sect::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 65%;
+    height: 100%;
+    content: '';
+    background: #F1F8FF;
+}
+
+.glearn-cont{
+    position: relative !important;
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.glearn-align{
+    align-items: center !important;
+}
+
+
+.glearn-row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.glearn-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.glearn-col{
+    margin-right: auto !important;
+    margin-left: auto !important;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.glearn-sect .glearn-h2{
+    margin-top: 50px;
+    color: #FD695A;
+    text-align: center !important;
+    font-size: 2.5rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.glearn-mt-5{
+    margin-top: 3rem !important;
+}
+
+.glearn-dnone {
+    display: none !important;
+}
+
+.glearn-sect .glearn-img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.glearn-acc-5{
+    margin-bottom: 3rem !important;
+    margin-top: 0 !important;
+}
+
+
+/* accordion */
+.glearn-sect .accordion-item {
+    background-color: #fff;
+    border: 0px solid rgba(0, 0, 0, .125);
+    margin-bottom: .5rem !important;
+}
+
+.glearn-sect .accordion-header {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.glearn-sect .accordion-header button {
+    padding: 15px 20px;
+    background-color: #fff;
+}
+
+.glearn-sect .accordion-body {
+    color: #000 !important;
+    font-size: .9em;
+    line-height: 2 !important;
+    padding: 1rem 1.25rem;
+}
+
+
+/* ======================= */
+
+
+.glearn-sect .glearn-h3{
+    font-size: 1.45rem !important;
+    text-align: center !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.glearn-text-center{
+    text-align: center !important;
+}
+
+.glearn-btn-mt{
+    margin-top: 1.5rem !important;
+}
+
+
+
+
+/* for smfaq.jsx */
+.smfaq-mt{
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+@media (min-width: 1200px) {
+    .smfaq-mt {
+        flex: 0 0 auto !important;
+        width: 91.66666667% !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries--================================== */
+
+@media (min-width: 576px) {
+    .glearn-smblock {
+        display: block !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .glearn-left {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+
+    .glearn-right {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .glearn-cont {
+        max-width: 1140px;
+    }
+
+    .glearn-col {
+        flex: 0 0 auto;
+        width: 75%;
+    }
+
+    .glearn-sect .glearn-h2 {
+        font-size: 2rem;
+    }
+
+    .glearn-sect .glearn-h3 {
+        font-size: 1.75rem;
+    }
+
+    .glearn-sect h2 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.about-hero-bg::after {
+    background: url(../assets/aboutbannerbg.svg) no-repeat center center / 100% auto !important;
+    position: absolute !important;
+    top: 0 !important;
+    content: '' !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 100% !important;
+}
+
+.about-hero-content p {
+    font-size: 16px;
+    font-family: 'Poppins';
+    width: 100%;
+}
+
+.about-heading-para {
+    color: #051a41 !important;
+    margin-top: 50px;
+    font-size: 2.3rem !important;
+    line-height: 3.8rem !important;
+    font-weight: bold !important;
+    width: 100% !important;
+    display: block !important;
+    font-family: 'Poppins' !important;
+}
+
+.about-hero-img {
+    z-index: 1 !important;
+}
+
+.about-hero-content {
+    z-index: 5 !important;
+}

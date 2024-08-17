@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins regular", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.SEhero-col{
+    flex: 0 0 auto;
+    width: 100%;
+    padding-right: 0;
+}
+
+.SEHero-sect {
+    border-radius: 0 0 100px 0;
+    background: url(../assets/seoherobanner.png) no-repeat;
+    /* padding-top: 120px; */
+    padding-bottom: 59px;
+    min-height: 90vh;
+    margin-bottom: 40px;
+    z-index: 0;
+    align-items: center !important;
+    position: relative !important;
+    display: flex !important;
+}
+
+.SEHero-sect::after{
+    background: url(../assets/careerbannerbg1.svg) no-repeat center center / 100% auto !important;
+    position: absolute !important;
+    content: '' !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 100% !important;
+}
+
+.SEHero-h1{
+    font-size: 2.3rem !important;
+    font-family: "Poppins";
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+    color: #051a41;
+}
+
+
+.SEHero-p{
+    font-size: 16px;
+    line-height: initial !important;
+    font-family: 'graphik';
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #051a41;
+}
+
+.SEHero-form-h3{
+    font-size: 1.2rem !important;
+    color: #0fcc7c !important;
+}
+
+.SEHero-form-p{
+    font-size: 22px;
+    color: #fff !important;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries====================== */
+@media (min-width: 1200px) {
+    .SEHero-h1 {
+        font-size: 2.5rem;
+    }
+}

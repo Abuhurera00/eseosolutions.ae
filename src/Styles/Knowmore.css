@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+.konw-section a{
+    text-decoration: none;
+}
+
+.konw-section{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.know-container{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.know-row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.know-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.know-align-items {
+    align-items: center !important;
+}
+
+.know-left{
+    margin-bottom: 1.5rem !important;
+}
+
+.know-left h2{
+    font-size: 2.5rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.know-left .know-p{
+    font-weight: 400;
+    font-size: 1rem;
+    --bs-text-opacity: 1;
+    color: rgba(33, 37, 41, var(--bs-text-opacity)) !important;
+}
+
+.konw-section p{
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.know-d-flex{
+    padding-top: 1.5rem !important;
+    justify-content: flex-start !important;
+    display: flex !important;
+}
+
+.know-col{
+    text-align: center !important;
+    flex-direction: column !important;
+    display: flex !important;
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.know-card{
+    max-height: 257px !important;
+    padding: 20px 15px !important;
+    flex: 0 0 250px;
+    max-width: 250px;
+    border-radius: 20px;
+    font-weight: 400;
+    transition: all 1s cubic-bezier(0.550,0.085,0.000,0.990);
+    text-align: center !important;
+    /* padding: .5rem !important; */
+    margin-bottom: 1.5rem !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    position: relative !important;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    overflow: hidden !important;
+}
+
+.know-card .konw-img{
+    max-width: 61px;
+    transition: all 1s cubic-bezier(0.550,0.085,0.000,0.990);
+    margin-bottom: .5rem !important;
+    margin-top: auto !important;
+    height: auto;
+    vertical-align: middle;
+}
+
+.know-card .know-h3{
+    margin-bottom: .5rem !important;
+    font-size: 1.125rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.know-right .know-small {
+    font-size: .875em;
+}
+
+.know-anchor{
+    font-weight: 600;
+    color: #0fcc7c;
+    margin-bottom: auto !important;
+    font-size: .9em;
+}
+
+.know-anchor .fa-arrow-right{
+    margin-left: .25rem !important;
+}
+
+.konw-section .know-card:hover {
+    color: #000;
+}
+.konw-section .know-card:hover h3 {
+    color: #FD695A;
+}
+
+.know-card a:hover {
+    color: #0a58ca;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries================================================================================ */
+
+@media (min-width: 768px) {
+    .know-left {
+        margin-bottom: 0 !important;
+    }
+
+    .col-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .pt-md-4 {
+        padding-top: 1.5rem !important;
+    }
+
+    .pt-md-5 {
+        padding-top: 3rem !important;
+    }
+
+    .mt-md-5 {
+        margin-top: 3rem !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .know-container {
+        max-width: 1140px;
+    }
+
+    .know-left h2 {
+        font-size: 2rem;
+    }
+
+    .know-right{
+        padding-right: 3rem !important;
+        padding-left: 3rem !important;
+    }
+
+    /* .know-card {
+        flex: 0 0 180px;
+        max-width: 180px;
+        max-height: 150px;
+    } */
+
+    .know-card .know-h3 {
+        font-size: 1.75rem;
+    }
+}

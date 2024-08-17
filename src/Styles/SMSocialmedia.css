@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins regular", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.socialmedia-sect{
+    background: url(../assets/smdownload.png) no-repeat right -300px top / auto 150%;
+    position: relative;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.socialmedia-cont{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.socialmedia-row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+.socialmedia-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.socialmedia-align {
+    align-items: center !important;
+}
+
+.socialmedia-sect h2 {
+    font-size: 2.5rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.socialmedia-sect p {
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Poppins regular", sans-serif;
+    font-size: 0.95rem;
+}
+
+.socialmedia-span{
+    color: #0fcc7c;
+}
+
+.socialmedia-btn{
+    margin-top: 1.5rem !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.socialmedia-right {
+    margin-top: 1.5rem !important;
+}
+
+.socialmedia-box-col{
+    text-align: center !important;
+    display: flex !important;
+}
+
+.socialmedia-icons{
+        flex: 0 0 150px;
+        max-width: 150px;
+        max-height: 140px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        border-radius: 20px;
+        font-weight: 400;
+        transition: all 1s cubic-bezier(0.550,0.085,0.000,0.990);
+        text-align: center !important;
+        padding: .5rem !important;
+        margin-bottom: 1.5rem !important;
+        margin-right: 1rem !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        position: relative !important;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+        display: inline-flex !important;
+        overflow: hidden !important;
+        color: inherit;
+        text-decoration: none;
+}
+
+
+.socialmedia-icons img {
+    max-width: 61px;
+    transition: all 1s cubic-bezier(0.550,0.085,0.000,0.990);
+    margin-bottom: 1rem !important;
+    margin-top: auto !important;
+    height: auto;
+    vertical-align: middle;
+}
+
+.socialmedia-name{
+    margin-bottom: auto !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media-queries================================================ */
+
+@media (max-width: 767.98px) {
+    .socialmedia-icons {
+        flex: 0 0 45%;
+        max-width: 45%;
+    }
+}
+
+@media (min-width: 768px) {
+    .socialmedia-col {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+
+    .socialmedia-right {
+        margin-top: 0 !important;
+    }
+
+    .socialmedia-box-pt {
+        padding-top: 3rem !important;
+    }
+
+    .socialmedia-box-mt{
+        margin-top: 3rem !important;
+    }
+
+    .socialmedia-box-col {
+        flex-direction: column !important;
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .socialmedia-icons {
+        margin-right: 0 !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .socialmedia-cont {
+        max-width: 1140px;
+    }
+
+    .socialmedia-left {
+        padding-right: 3rem !important;
+    }
+
+    .socialmedia-sect h2 {
+        font-size: 2rem;
+    }
+
+    .socialmedia-right{
+        padding-left: 3rem !important;
+    }
+
+    .socialmedia-icons {
+        flex: 0 0 180px;
+        max-width: 180px;
+        max-height: 150px;
+    }
+}

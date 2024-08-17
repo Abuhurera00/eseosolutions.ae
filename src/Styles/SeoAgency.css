@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins regular", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.seoagency-sect a{
+    text-decoration: none;
+}
+
+.seoagency-sect{
+    background: url(../assets/seoagnecybg.png) no-repeat right -300px top / auto 150%;
+    position: relative;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+
+.seoagency-cont{
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.seoagency-align{
+    align-items: center !important;
+}
+
+.seoagency-row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.seoagency-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.seoagency-col-left{
+    margin-bottom: 1.5rem !important;
+}
+
+.seoagnecy-banner{
+    max-width: 100%;
+    height: auto;
+}
+
+.seoagency-btn{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    margin-top: 1.5rem !important;
+    margin-right: 1.5rem !important;
+    margin-left: 1.5rem !important;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.seoagency-h2{
+    color: #FD695A;
+    font-size: 2.5rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+
+.seoagency-sect h3{
+    font-size: 1.45rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.seoagency-sect p{
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Poppins regular", sans-serif;
+    font-size: 0.95rem;
+}
+
+.seoagency-p{
+    margin-top: 1.5rem !important;
+}
+
+.seoagency-text-center {
+    text-align: center !important;
+    padding-top: 1rem !important;
+}
+
+.seoagency-card{
+    margin-bottom: 1rem !important;
+}
+
+.seoagency-card-inner{
+    border-radius: .875rem !important;
+    padding-bottom: 1rem !important;
+    padding-top: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.seoagency-card-inner img {
+    margin-bottom: 1.5rem !important;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries===================================================== */
+
+@media (min-width: 768px) {
+    .seoagency-col-left {
+        margin-bottom: 0 !important;
+    }
+
+    .seoagency-col-left {
+        flex: 0 0 auto;
+        width: 41.66666667%;
+    }
+
+    .seoagency-col-right {
+        flex: 0 0 auto;
+        width: 58.33333333%;
+    }
+
+    .seoagency-card {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .pt-lg-5 {
+        padding-top: 3rem !important;
+        margin-bottom: 0 !important;
+    }
+
+    .seoagency-card{
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .seoagency-cont {
+        max-width: 1140px;
+    }
+
+    .seoagency-col-left {
+        padding-right: 3rem !important;
+    }
+
+    .seoagency-h2 {
+        font-size: 2rem;
+    }
+
+    .seoagency-sect h3 {
+        font-size: 1.75rem;
+    }
+}

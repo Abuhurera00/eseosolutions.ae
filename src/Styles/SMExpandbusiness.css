@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins regular", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.expand-sect{
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    position: relative !important;
+}
+
+.expand-cont{
+    position: relative !important;
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.expand-row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.expand-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.expand-align{
+    align-items: center !important;
+}
+
+.expand-h2 {
+    --bs-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--bs-text-opacity)) !important;
+}
+
+.expand-sect h2{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.expand-sect p{
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: "Poppins regular", sans-serif;
+    font-size: 0.95rem;
+}
+
+.expand-mt{
+    text-align: center !important;
+    margin-top: 3rem !important;
+}
+
+
+.expand-sect img {
+    width: 76px;
+    margin-top: 15px;
+}
+
+.expand-h3{
+    color: #0fcc7c;
+}
+
+.expand-sect h3{
+    font-size: 1.45rem !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.expand-sect .wave {
+    height: 400px !important;
+    background: #0fcc7c !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries-==================================================== */
+
+@media (max-width: 767.98px) {
+    .expand-sect .wave {
+        height: 570px !important;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .expand-top {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .expand-cont {
+        max-width: 1140px;
+    }
+
+    .expand-left {
+        padding-right: 3rem !important;
+    }
+
+    .expand-sect h2 {
+        font-size: 2rem;
+    }
+
+    .expand-sect h3 {
+        font-size: 1.75rem;
+    }
+}

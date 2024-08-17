@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins regular", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.integration-sect{
+    position: relative !important;
+}
+
+.integration-sect .map{
+    height: 100% !important;
+    width: 100% !important;
+    left: 0 !important;
+    top: 0 !important;
+    position: absolute !important;
+}
+
+.integration-cont{
+    position: relative !important;
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.integration-row{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+
+.integration-row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+
+.integration-sect .integration-center{
+    margin-left: auto !important;
+}
+
+.integration-sect .submit-form{
+    box-shadow: 0 0 50px rgba(96, 233, 255, 0.27);
+    border-radius: 10px;
+    background: #00384f;
+    padding: 1.5rem !important;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+.submit-form h3{
+    --bs-text-opacity: 1;
+    color: rgba(255, 255, 255, var(--bs-text-opacity)) !important;
+    margin-bottom: 1.5rem !important;
+    font-size: 1.125rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    line-height: 1.2;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.submit-form .form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.submit-form .form-control {
+    box-shadow: 0 0 20px rgba(96, 233, 255, 0.27) !important;
+    border-radius: 30px !important;
+    background: #12485c !important;
+    padding: 10px 17px !important;
+    color: #fff !important;
+    font-weight: 400 !important;
+    font-size: inherit !important;
+    border: 0 !important;
+}
+
+.form-control::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+.form-btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    background-color: #FD695A;;
+    box-shadow: 0px 6px 20px #2A84FC important;
+    transition: all 1s cubic-bezier(0.550,0.085,0.000,0.990);
+    border: 0;
+    padding: 0.75rem 1.3rem;
+    box-shadow: 0 .5rem 1rem rgba(255, 88, 0, .4) !important;
+    border-radius: 40px;
+    font-size: 14px;
+    width: 100% !important;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.footer-form .form-btn:hover {
+    background-color: #fff;
+    color: #FD695A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries========================================== */
+
+
+@media (max-width: 767.98px) {
+    .submit-form h3 {
+        font-size: 1rem !important;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .integration-sect .integration-center {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .integration-cont{
+        max-width: 1140px;
+    }
+
+    .integration-sect .integration-center {
+        flex: 0 0 auto;
+        width: 33.33333333%;
+    }
+
+    .integration-sect .submit-form {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    .submit-form h3 {
+        font-size: 1.75rem;
+    }
+
+}
